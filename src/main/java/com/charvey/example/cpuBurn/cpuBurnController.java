@@ -27,7 +27,7 @@ class cpuBurnController {
         Thread[] threads = new Thread[numThreads + 4];
         long endTime = Instant.now().getEpochSecond() + id;
         long currentTime = 0L;
-        log.info("Starting CPU burner for " + id + " seconds, thread count: " + (numThreads-1));
+        log.info("Starting CPU burner for " + id + " seconds, thread count: " + (numThreads+4));
 
         // Create and start CPU-intensive threads
         for (int i = 0; i < (numThreads + 3); i++) {
