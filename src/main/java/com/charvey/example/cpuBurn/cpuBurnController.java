@@ -11,12 +11,10 @@ import static java.lang.Thread.sleep;
 @RestController
 class cpuBurnController {
 
-    private final cpuBurnRepository repository;
-
     private static final Logger log = LoggerFactory.getLogger(cpuBurnController.class);
 
-    cpuBurnController(cpuBurnRepository repository) {
-        this.repository = repository;
+    cpuBurnController() {
+
     }
 
     // Aggregate root
